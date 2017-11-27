@@ -1,0 +1,18 @@
+--from dfhlascasql01
+SELECT TOP (1000) [ID]
+,[UtcTime]
+,[W1T],[W2T],[W3T],[W4T],[W5T]
+,[W1W],[W2W],[W3W],[W4W],[W5W]
+,[M1T],[M2T],[M3T],[M4T],[M5T]
+,[M1W],[M2W],[M3W],[M4W],[M5W]
+,[E1T],[E2T],[E3T],[E4T],[E5T]
+,[E1W],[E2W],[E3W],[E4W],[E5W]
+,[SlabIdCoolingTower]
+,[WcsLotDateSlabNum]
+,[WcsItem]
+,[WcsProductionOrder]
+,[WcsUnit]
+,[Shelf],[Enter shelf],[Exit shelf]
+,[Tray],[Enter tray],[Exit tray]
+FROM [Plant3_Lasers].[dbo].[SL3CTLasers]
+order by UtcTime desc
